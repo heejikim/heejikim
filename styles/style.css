@@ -285,6 +285,12 @@ ul {
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 500px) {
+  .wrapper {
+    width: 100%;
+  }
+}
+
 .accent {
   position: relative;
   z-index: 1;
@@ -338,11 +344,31 @@ header h2 {
   z-index: 2;
 }
 
+@media only screen and (max-width: 1220px) {
+  header h2 {
+    font-size: 4.5rem;
+    margin: 0px 50px 50px 50px;
+  }
+}
+
+@media only screen and (max-width: 1010px) {
+  header h2 {
+    font-size: 4rem;
+    margin: 0px 30px 50px 30px;
+  }
+}
+
 header p {
   padding-top: 25.5px;
   font-size: 1.6rem;
   line-height: 23px;
   text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+  header p {
+    padding: 25.5px 10px;
+  }
 }
 
 header .accent::before {
