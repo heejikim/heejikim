@@ -1,0 +1,45 @@
+h1 {
+  margin-left: 20px;
+  padding-top: 26px;
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+header {
+  min-height: 100vh;
+  background: $background;
+  position: relative;
+  overflow-x: hidden;
+  h2 {
+    margin: 0 100px;
+    margin-bottom: 50px;
+    font-size: 5rem;
+    line-height: 71px;
+    font-weight: 300;
+    position: relative;
+    z-index: 2;
+  }
+  p {
+    padding-top: 25.5px;
+    font-size: 1.6rem;
+    line-height: 23px;
+    text-align: center;
+  }
+  .accent::before {
+    height:6px;
+    width:130%;
+    bottom: 1px;
+  }
+  .wiggle {
+    &.header-one {
+      right: -17%;
+      top: 115px;
+    }
+    &.header-two {
+      left: -17%;
+      top: 330px;
+    }
+  } 
+}
