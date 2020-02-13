@@ -1,7 +1,14 @@
 img { display: block; width: 100%; }
 a, a:visited { text-decoration: none; color: inherit; }
 ul { list-style: none; padding: 0; margin: 0; }
-.wrapper { max-width: 1140px; width: 90%; margin: 0 auto; }
+.wrapper { 
+  max-width: 1140px; 
+  width: 90%; 
+  margin: 0 auto; 
+  @include media($final-break) {
+    width: 100%;
+  }
+}
 
 .accent {
   position: relative;
