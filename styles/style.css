@@ -391,16 +391,25 @@ header h2 {
 }
 
 header p {
-  padding-top: 25.5px;
+  padding-top: 20px;
   font-size: 1.6rem;
   line-height: 23px;
   text-align: center;
+  margin: 5px;
+}
+
+header p:nth-of-type(2) {
+  padding-top: 0;
 }
 
 @media only screen and (max-width: 500px) {
   header p {
     padding: 25.5px 10px;
   }
+}
+
+header a {
+  text-decoration: underline;
 }
 
 header .header-text {
