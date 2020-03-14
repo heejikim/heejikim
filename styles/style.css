@@ -435,6 +435,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 @media only screen and (max-width: 1010px) {
@@ -503,6 +504,65 @@ header .accent::before {
   height: 6px;
   width: 130%;
   bottom: 2px;
+}
+
+.header-text {
+  padding-bottom: 25px;
+}
+
+.header-text .scroll {
+  position: absolute;
+  left: 50%;
+  bottom: 15px;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+.header-text .scroll a {
+  padding: 0 15px;
+  width: 100%;
+  display: block;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.header-text .scroll a:hover {
+  -webkit-animation: verticalWiggle 1s infinite linear;
+          animation: verticalWiggle 1s infinite linear;
+}
+
+.header-text .scroll img {
+  width: 15px;
+}
+
+@-webkit-keyframes verticalWiggle {
+  0%, 100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  25% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  75% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+}
+
+@keyframes verticalWiggle {
+  0%, 100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  25% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  75% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
 }
 
 /* Main Styles - header.scss */
