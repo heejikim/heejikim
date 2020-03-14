@@ -1,0 +1,18 @@
+footer {
+  padding-top: 64px;
+  padding-bottom: 130px;
+  background: $background;
+  .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li {
+      margin: 17px;
+      padding: 5px;
+    }
+    a {
+      color: $off-black;
+      font-size: 3.5rem;
+    }
+  }
+}

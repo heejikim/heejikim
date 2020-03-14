@@ -279,6 +279,10 @@ ul {
   margin: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .wrapper {
   max-width: 1140px;
   width: 90%;
@@ -316,6 +320,86 @@ ul {
   width: 500px;
 }
 
+.seperate-line {
+  display: block;
+}
+
+.link-button {
+  border: 2px solid #212223;
+  padding: 15px 18px;
+  font-size: 2rem;
+  font-weight: 300;
+  position: relative;
+  z-index: 1;
+  color: #212223;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.link-button img {
+  display: inline-block;
+  width: 30px;
+}
+
+.link-button::before, .link-button::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.link-button::before {
+  z-index: -1;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
+  background: #212223;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.link-button::after {
+  background: #fff;
+  z-index: -2;
+}
+
+.link-button:hover {
+  color: #fff;
+}
+
+.link-button:hover::before {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 5px;
+  background-color: #212223;
+  -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+  -webkit-transform: translate3d(0px, 0px, 0px) scale3d(0, 1, 1);
+          transform: translate3d(0px, 0px, 0px) scale3d(0, 1, 1);
+  -webkit-transition: -webkit-transform 0.1s linear;
+  transition: -webkit-transform 0.1s linear;
+  transition: transform 0.1s linear;
+  transition: transform 0.1s linear, -webkit-transform 0.1s linear;
+}
+
 /* Header Styles - header.scss */
 h1 {
   margin-left: 20px;
@@ -326,13 +410,7 @@ h1 {
   font-weight: 500;
   text-transform: uppercase;
   position: absolute;
-  top: 26px;
-}
-
-@media (max-height: 750px) {
-  h1 {
-    position: relative;
-  }
+  top: 0px;
 }
 
 @media only screen and (max-width: 1010px) {
@@ -344,7 +422,6 @@ h1 {
 header {
   min-height: 100vh;
   background: #F7F6F3;
-  overflow-x: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -352,9 +429,9 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -369,7 +446,7 @@ header {
 header h2 {
   margin: 0 100px;
   margin-bottom: 50px;
-  font-size: 5rem;
+  font-size: 3.3rem;
   line-height: 71px;
   font-weight: 300;
   position: relative;
@@ -378,7 +455,7 @@ header h2 {
 
 @media only screen and (max-width: 1220px) {
   header h2 {
-    font-size: 4.5rem;
+    font-size: 3rem;
     margin: 0px 50px 50px 50px;
   }
 }
@@ -412,18 +489,14 @@ header a {
   text-decoration: underline;
 }
 
-header .header-text {
-  position: relative;
-}
-
 header .wiggle.header-one {
-  right: -30%;
+  right: -150px;
   top: 5%;
 }
 
 header .wiggle.header-two {
-  left: -35%;
-  bottom: 20%;
+  left: -100px;
+  bottom: 0%;
 }
 
 header .accent::before {
@@ -433,4 +506,116 @@ header .accent::before {
 }
 
 /* Main Styles - header.scss */
+.work-list {
+  margin-top: 131px;
+}
+
+.work-list h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 2px 0 5px 0;
+}
+
+.work-list h3 {
+  font-size: 5rem;
+  font-weight: 300;
+  margin: 0;
+  color: #ECA899;
+}
+
+.work-list p {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.work-list .__piece {
+  margin-bottom: 127px;
+}
+
+.work-list .-description {
+  margin: 27px 25px;
+}
+
+.work-list .-description p {
+  width: 60%;
+}
+
+.work-list .-description .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.work-list .-tag {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.illustration {
+  position: relative;
+  padding: 2rem 0;
+}
+
+.illustration h2 {
+  font-size: 3.3rem;
+}
+
+.illustration .__background {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.illustration .__content {
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 32px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.illustration .__content .-image {
+  margin-right: 117px;
+}
+
+.illustration .__content .-text h2 {
+  padding-bottom: 27px;
+}
+
 /* Footer Styles - footer.scss */
+footer {
+  padding-top: 64px;
+  padding-bottom: 130px;
+  background: #F7F6F3;
+}
+
+footer .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .socials li {
+  margin: 17px;
+  padding: 5px;
+}
+
+footer .socials a {
+  color: #212223;
+  font-size: 3.5rem;
+}

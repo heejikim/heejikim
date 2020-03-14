@@ -7,10 +7,10 @@ h1 {
   font-weight: 500;
   text-transform: uppercase;
   position: absolute;
-  top: 26px;
-  @media(max-height: 750px){
-    position: relative;
-  }
+  top: 0px;
+  // @media(max-height: 750px){
+  //   position: relative;
+  // }
   @include media($second-break){
     position: relative;
   }
@@ -18,10 +18,9 @@ h1 {
 header {
   min-height: 100vh;
   background: $background;
-  overflow-x: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   @include media($second-break){
     display: block;
@@ -29,13 +28,13 @@ header {
   h2 {
     margin: 0 100px;
     margin-bottom: 50px;
-    font-size: 5rem;
+    font-size: 3.3rem;
     line-height: 71px;
     font-weight: 300;
     position: relative;
     z-index: 2;
     @include media($first-break) {
-      font-size: 4.5rem;
+      font-size: 3rem;
       margin: 0px 50px 50px 50px;
     }
     @include media($second-break) {
@@ -59,17 +58,14 @@ header {
   a {
     text-decoration: underline;
   }
-  .header-text {
-    position: relative;
-  }
   .wiggle {
     &.header-one {
-      right: -30%;
+      right: -150px;
       top: 5%;
     }
     &.header-two {
-      left: -35%;
-      bottom: 20%;
+      left: -100px;
+      bottom: 0%;
     }
   } 
   .accent::before {

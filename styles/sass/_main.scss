@@ -1,0 +1,64 @@
+
+.work-list {
+  margin-top: 131px;
+  h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 2px 0 5px 0;
+  }
+  h3 {
+    font-size: 5rem;
+    font-weight: 300;
+    margin: 0;
+    color: $highlight;
+  }
+  p {
+    font-size: 2rem;
+    margin: 0;
+  }
+  & .__piece {
+    margin-bottom: 127px;
+  }
+  & .-description {
+    margin: 27px 25px;
+    p {
+      width: 60%;
+    }
+    & .flex {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  & .-tag {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+}
+
+.illustration {
+  position: relative;
+  padding: 2rem 0;
+  h2 {
+    font-size: 3.3rem;
+  }
+  & .__background {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  & .__content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    padding: 32px;
+    align-items: center;
+    & .-image {
+      margin-right: 117px;
+    }
+    & .-text h2 {
+      padding-bottom: 27px;
+    }
+  }
+}

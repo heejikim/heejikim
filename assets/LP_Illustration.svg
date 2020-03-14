@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="327" height="319" viewBox="0 0 327 319">
+  <defs>
+    <rect id="lp_illustration-a" width="310" height="302" x="16" y="16"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="310" height="302" x="1" y="1" fill="#FFF" stroke="#212223" stroke-width="2"/>
+    <rect width="310" height="302" x="16" y="16" fill="#FFF" stroke="#212223" stroke-width="2"/>
+    <line x1="63.5" x2="63.5" y1="17.5" y2="316.5" stroke="#A5A5A5" stroke-linecap="square" stroke-width="2"/>
+    <line x1="87.5" x2="87.5" y1="17.5" y2="316.5" stroke="#A5A5A5" stroke-linecap="square" stroke-width="2"/>
+    <line x1="111.5" x2="111.5" y1="17.5" y2="316.5" stroke="#A5A5A5" stroke-linecap="square" stroke-width="2"/>
+    <line x1="135.5" x2="135.5" y1="17.5" y2="316.5" stroke="#A5A5A5" stroke-linecap="square" stroke-width="2"/>
+    <line x1="159.5" x2="159.5" y1="17.5" y2="316.5" stroke="#A5A5A5" stroke-linecap="square" stroke-width="2"/>
+    <line x1="183.5" x2="183.5" y1="17.5" y2="316.5" stroke="#A5A5A5" stroke-linecap="square" stroke-width="2"/>
+    <line x1="207.5" x2="207.5" y1="17.5" y2="316.5" stroke="#A5A5A5" stroke-linecap="square" stroke-width="2"/>
+    <line x1="231.5" x2="231.5" y1="17.5" y2="316.5" stroke="#A5A5A5" stroke-linecap="square" stroke-width="2"/>
+    <line x1="255.5" x2="255.5" y1="17.5" y2="316.5" stroke="#A5A5A5" stroke-linecap="square" stroke-width="2"/>
+    <line x1="279.5" x2="279.5" y1="17.5" y2="316.5" stroke="#A5A5A5" stroke-linecap="square" stroke-width="2"/>
+    <line x1="303.5" x2="303.5" y1="17.5" y2="316.5" stroke="#A5A5A5" stroke-linecap="square" stroke-width="2"/>
+    <line x1="39.5" x2="39.5" y1="17.5" y2="316.5" stroke="#A5A5A5" stroke-linecap="square" stroke-width="2"/>
+    <line x1="170.5" x2="170.5" y1="-94.483" y2="214.483" stroke="#A5A5A5" stroke-linecap="square" stroke-width="2" transform="rotate(90 170.5 60)"/>
+    <line x1="170.5" x2="170.5" y1="-70.483" y2="238.483" stroke="#A5A5A5" stroke-linecap="square" stroke-width="2" transform="rotate(90 170.5 84)"/>
+    <line x1="170.5" x2="170.5" y1="-46.483" y2="262.483" stroke="#A5A5A5" stroke-linecap="square" stroke-width="2" transform="rotate(90 170.5 108)"/>
+    <line x1="170.5" x2="170.5" y1="-22.483" y2="286.483" stroke="#A5A5A5" stroke-linecap="square" stroke-width="2" transform="rotate(90 170.5 132)"/>
+    <line x1="170.5" x2="170.5" y1="1.517" y2="310.483" stroke="#A5A5A5" stroke-linecap="square" stroke-width="2" transform="rotate(90 170.5 156)"/>
+    <line x1="170.5" x2="170.5" y1="25.517" y2="334.483" stroke="#A5A5A5" stroke-linecap="square" stroke-width="2" transform="rotate(90 170.5 180)"/>
+    <line x1="170.5" x2="170.5" y1="49.517" y2="358.483" stroke="#A5A5A5" stroke-linecap="square" stroke-width="2" transform="rotate(90 170.5 204)"/>
+    <line x1="170.5" x2="170.5" y1="73.517" y2="382.483" stroke="#A5A5A5" stroke-linecap="square" stroke-width="2" transform="rotate(90 170.5 228)"/>
+    <line x1="170.5" x2="170.5" y1="97.517" y2="406.483" stroke="#A5A5A5" stroke-linecap="square" stroke-width="2" transform="rotate(90 170.5 252)"/>
+    <line x1="170.5" x2="170.5" y1="121.517" y2="430.483" stroke="#A5A5A5" stroke-linecap="square" stroke-width="2" transform="rotate(90 170.5 276)"/>
+    <line x1="170.5" x2="170.5" y1="145.517" y2="454.483" stroke="#A5A5A5" stroke-linecap="square" stroke-width="2" transform="rotate(90 170.5 300)"/>
+    <line x1="170.5" x2="170.5" y1="-118.483" y2="190.483" stroke="#A5A5A5" stroke-linecap="square" stroke-width="2" transform="rotate(90 170.5 36)"/>
+    <g transform="translate(45.286 75)">
+      <ellipse cx="123.134" cy="88" fill="#ECA899" rx="88.134" ry="88"/>
+      <polygon fill="#ADC8B5" points="188.131 63.158 244.503 176 131.759 176"/>
+      <path fill="#FFC96B" fill-rule="nonzero" d="M91.2067419,23.0422419 C95.4292627,19.3450515 100.215971,15.1525854 100.215971,6.93274501 C100.215971,5.70324452 99.197546,4.70834846 97.9414516,4.70834846 C96.6853571,4.70834846 95.6669322,5.70324452 95.6669322,6.93274501 C95.6669322,13.1649654 92.1940698,16.2061326 88.1714578,19.7273697 C83.948937,23.4245601 79.1633394,27.614854 79.1633394,35.8346944 C79.1633394,44.0545348 83.948937,48.2470009 88.1714578,51.9463637 C92.1940698,55.4676008 95.6669322,58.5109403 95.6669322,64.7453328 C95.6669322,70.9797253 92.1940698,74.0230648 88.1725685,77.5464742 C83.9500477,81.2458368 79.1633394,85.4404752 79.1633394,93.6646601 C79.1633394,101.8845 83.948937,106.076967 88.1714578,109.776329 C92.1940698,113.297566 95.6669322,116.340906 95.6669322,122.575298 C95.6669322,128.814036 92.1929591,131.859547 88.1714578,135.382957 C83.948937,139.084492 79.1633394,143.27913 79.1633394,151.505487 C79.1633394,159.731844 83.948937,163.926483 88.1714578,167.628018 C92.1929591,171.151427 95.6669322,174.196939 95.6669322,180.435676 C95.6669322,181.665177 96.6853571,182.660073 97.9414516,182.660073 C99.197546,182.660073 100.215971,181.665177 100.215971,180.435676 C100.215971,172.209319 95.4303733,168.01468 91.2078525,164.313146 C87.1863512,160.789736 83.7123781,157.744224 83.7123781,151.505487 C83.7123781,145.26675 87.1863512,142.221238 91.2078525,138.697829 C95.4303733,134.996294 100.215971,130.801656 100.215971,122.575298 C100.215971,114.353286 95.4292627,110.16082 91.2067419,106.461457 C87.1852406,102.94022 83.7123781,99.8968807 83.7123781,93.6646601 C83.7123781,87.4280952 87.1863512,84.3847557 91.2078525,80.8613463 C95.4303733,77.1619837 100.215971,72.9673453 100.215971,64.7453326 C100.215971,56.5233198 95.4292627,52.3308537 91.2067419,48.6314912 C87.1852406,45.1102541 83.7123781,42.0669148 83.7123781,35.8346944 C83.7123781,29.6046462 87.1852406,26.563479 91.2067419,23.0422419 Z" transform="rotate(90 89.69 93.684)"/>
+    </g>
+    <use stroke="#212223" stroke-width="2" xlink:href="#lp_illustration-a"/>
+  </g>
+</svg>

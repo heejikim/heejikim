@@ -1,6 +1,9 @@
 img { display: block; width: 100%; }
 a, a:visited { text-decoration: none; color: inherit; }
 ul { list-style: none; padding: 0; margin: 0; }
+body {
+  overflow-x: hidden;
+}
 .wrapper { 
   max-width: 1140px; 
   width: 90%; 
@@ -32,4 +35,64 @@ ul { list-style: none; padding: 0; margin: 0; }
   position: absolute;
   z-index: 0;
   width: 500px;
+}
+.seperate-line {
+  display: block;
+}
+.link-button {
+  // background: $primary-white;
+  border: 2px solid $off-black;
+  padding: 15px 18px;
+  font-size: 2rem;
+  font-weight: 300;
+  position: relative;
+  z-index: 1;
+  color: $off-black;
+  transition: color 0.3s;
+  img {
+    display: inline-block;
+    width: 30px;
+  }
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  &::before {
+    z-index: -1;
+    transform: scale(0,1);
+    transform-origin: 100% 50%;
+    background: $off-black;
+    transition: transform 0.3s ease-in-out;
+  }
+  &::after {
+    background: $primary-white;
+    z-index: -2;
+  }
+  &:hover {
+    color: $primary-white;
+    &::before {
+      transform: scale(1,1);
+      transform-origin: 0% 50%;
+    }
+  }
+}
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 5px;
+  background-color: $off-black;
+  transform-origin: 0% 50%;
+  transform: translate3d(0px, 0px, 0px) scale3d(0, 1, 1);
+  transition: transform 0.1s linear;
 }
