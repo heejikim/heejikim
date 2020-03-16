@@ -3,7 +3,6 @@
   margin-top: 131px;
   h2 {
     font-size: 2rem;
-    font-weight: 500;
     margin: 2px 0 5px 0;
   }
   h3 {
@@ -60,5 +59,28 @@
     & .-text h2 {
       padding-bottom: 27px;
     }
+  }
+}
+
+main.canary {
+  h2 {
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: $main-grey;
+    margin: 25px 0;
+  }
+}
+
+section.hero {
+  position: relative;
+  .wiggle {
+    left: -350px;
+    bottom: 250px;
+    transform: translateY(50%);
+  } 
+  p {
+    font-size: 2.4rem;
+    line-height: 35px;
+    margin: 62px 160px;
   }
 }

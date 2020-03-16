@@ -1,11 +1,49 @@
-* {
-    font-family: $font-sans-serif;
+$font-serif: 'Noto Serif', serif;
+$font-sans-serif: 'Open Sans', sans-serif;
+$font-header: 'Poppins', sans-serif;
+
+p, h2, h3 {
+  color: $main-grey;
+}
+html {
+  font-size: 62.5%;
 }
 
-html {
-    font-size: 62.5%;
+h1,
+h2,
+h3,
+nav {
+  font-family: $font-header;
+}
+h4 {
+  font-family: $font-serif;
+}
+
+p {
+  font-family: $font-sans-serif;
 }
 
 .italic {
-    font-style: italic;
+  font-style: italic;
 }
+.bold {
+  font-weight: bold;
+}
+.light {
+  font-weight: 300;
+}
+p.accent {
+  font-weight: bold;
+}
+h1>.accent {
+  position: relative;
+  z-index: 1;
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    background-color: $highlight;
+  }
+}
+  
