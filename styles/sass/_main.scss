@@ -62,15 +62,6 @@
   }
 }
 
-main.canary {
-  h2 {
-    font-size: 3.6rem;
-    font-weight: 700;
-    color: $main-grey;
-    margin: 25px 0;
-  }
-}
-
 section.hero {
   position: relative;
   .wiggle {
@@ -82,5 +73,17 @@ section.hero {
     font-size: 2.4rem;
     line-height: 35px;
     margin: 62px 160px;
+  }
+}
+
+.icon-list-flex {
+  display: flex;
+  justify-content: center;
+  li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 55px;
+    text-align: center;
   }
 }

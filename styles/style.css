@@ -335,6 +335,11 @@ body {
   }
 }
 
+.inner-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .divider {
   width: 100%;
   height: 2px;
@@ -442,12 +447,6 @@ h1 {
   color: #212223;
 }
 
-@media only screen and (max-width: 1010px) {
-  h1 {
-    position: relative;
-  }
-}
-
 .landing-header {
   min-height: 100vh;
   display: -webkit-box;
@@ -470,6 +469,9 @@ h1 {
 @media only screen and (max-width: 1010px) {
   .landing-header {
     display: block;
+  }
+  .landing-header h1 {
+    position: relative;
   }
 }
 
@@ -616,7 +618,7 @@ header.canary .wrapper {
   position: relative;
 }
 
-/* Main Styles - header.scss */
+/* Main Styles - main.scss */
 .work-list {
   margin-top: 131px;
 }
@@ -701,13 +703,6 @@ header.canary .wrapper {
   padding-bottom: 27px;
 }
 
-main.canary h2 {
-  font-size: 3.6rem;
-  font-weight: 700;
-  color: #434343;
-  margin: 25px 0;
-}
-
 section.hero {
   position: relative;
 }
@@ -723,6 +718,125 @@ section.hero p {
   font-size: 2.4rem;
   line-height: 35px;
   margin: 62px 160px;
+}
+
+.icon-list-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.icon-list-flex li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 55px;
+  text-align: center;
+}
+
+/* Canary Styles - canary.scss */
+main.canary h2 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: #434343;
+  margin: 25px 0;
+}
+
+main.canary section h3 {
+  font-size: 2.0rem;
+}
+
+.parallel-space > p {
+  text-align: center;
+}
+
+.parallel-space li {
+  margin: 88px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.parallel-space li .text {
+  width: 449px;
+  margin-left: 60px;
+}
+
+.parallel-space li:nth-of-type(2) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.parallel-space li:nth-of-type(2) .text {
+  margin-left: 0px;
+  margin-right: 60px;
+}
+
+.final-design .logo {
+  width: 480px;
+  margin: 0 auto;
+  margin-top: 114px;
+}
+
+.final-design .posters {
+  margin: 92px 0;
+}
+
+.final-design .mockups > li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 92px 0;
+}
+
+.final-design .mockups > li:last-of-type {
+  display: block;
+}
+
+.final-design .mockups .left,
+.final-design .mockups .right {
+  width: calc(50% - 30px);
+}
+
+.final-design .mockups .left {
+  margin-right: 30px;
+}
+
+.final-design .mockups .right {
+  margin-left: 30px;
+}
+
+.final-design .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.final-design .icons li {
+  width: calc(33% - 18px);
+  margin: 9px;
 }
 
 /* Footer Styles - footer.scss */

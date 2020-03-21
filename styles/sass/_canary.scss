@@ -1,0 +1,73 @@
+main.canary {
+  h2 {
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: $main-grey;
+    margin: 25px 0;
+  }
+  section h3 {
+    font-size: 2.0rem;
+  }
+}
+
+.parallel-space {
+  &>p {
+    text-align: center;
+  }
+  li {
+    margin: 88px 0;
+    display: flex;
+    align-items: center;
+    .text {
+      width: 449px;
+      margin-left: 60px;
+    }
+  }
+  li:nth-of-type(2) {
+    flex-direction: row-reverse;
+    .text {
+      margin-left: 0px;
+      margin-right: 60px;
+    }
+  }
+}
+
+.final-design {
+  .logo {
+    width: 480px;
+    margin: 0 auto;
+    margin-top: 114px;
+  }
+  .posters {
+    margin: 92px 0;
+  }
+  .mockups {
+    &>li {
+      display: flex;
+      margin: 92px 0;
+    }
+    &>li:last-of-type {
+      display: block;
+    }
+    .left,
+    .right {
+      width: calc(50% - 30px);
+    }
+    .left {
+      margin-right: 30px;
+    }
+    .right {
+      margin-left: 30px;
+    }
+  }
+  .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    li {
+      width: calc(33% - 18px); 
+      margin: 9px;
+    }
+  }
+}

@@ -9,9 +9,6 @@ h1 {
   position: absolute;
   top: 0px;
   color: #212223;
-  @include media($second-break){
-    position: relative;
-  }
 }
 .landing-header {
   min-height: 100vh;
@@ -23,6 +20,9 @@ h1 {
   position: relative;
   @include media($second-break){
     display: block;
+    h1 {
+      position: relative;
+    }
   }
   h2 {
     margin: 0 100px;
