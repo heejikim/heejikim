@@ -2,7 +2,7 @@ $font-serif: 'Noto Serif', serif;
 $font-sans-serif: 'Open Sans', sans-serif;
 $font-header: 'Poppins', sans-serif;
 
-p, h2, h3 {
+p, h2, h3, h4 {
   color: $main-grey;
 }
 html {
@@ -21,6 +21,7 @@ h4 {
 
 p {
   font-family: $font-sans-serif;
+  line-height: 27px;
 }
 
 .italic {
@@ -34,6 +35,10 @@ p {
 }
 p.accent {
   font-weight: bold;
+  font-family: $font-serif;
+}
+p.semi-accent {
+  font-weight: 600;
 }
 h1>.accent {
   position: relative;

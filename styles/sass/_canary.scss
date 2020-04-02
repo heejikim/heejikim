@@ -1,4 +1,4 @@
-main.canary {
+.canary {
   h2 {
     font-size: 3.6rem;
     font-weight: 700;
@@ -8,8 +8,61 @@ main.canary {
   section h3 {
     font-size: 2.0rem;
   }
+  section h4 {
+    font-size: 1.8rem;
+    margin: 0;
+  }
+  p {
+    font-size: 1.8rem;
+    margin: 0;
+    margin-bottom: 18px;
+    margin-top: 18px;
+  }
+  section {
+    margin: 100px 0;
+  }
 }
-
+.primary-research {
+  p {
+    margin: 0px 0 18px;
+  }
+  .stats {
+    width:75%;
+    margin: 30px auto;
+    position: relative;
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 90%;
+      width: 2px;
+      top: 5%;
+      left: -23.5px;
+      background-color: #979797;
+    }
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      font-size: 1.7rem;
+    }
+    
+  }
+  p.percentage {
+    font-size: 4.1rem;
+    font-family: $font-serif;
+    padding-right: 5px;
+    flex-basis: 25%;
+  }
+  p.quote {
+    flex-basis: 75%;
+  }
+}
+.secondary-research {
+  p {
+    margin: 0px 0 18px;
+  }
+}
 .parallel-space {
   &>p {
     text-align: center;
@@ -33,6 +86,9 @@ main.canary {
 }
 
 .final-design {
+  p {
+    margin: 18px 0;
+  }
   .logo {
     width: 480px;
     margin: 0 auto;
@@ -42,12 +98,9 @@ main.canary {
     margin: 92px 0;
   }
   .mockups {
-    &>li {
+    li {
       display: flex;
       margin: 92px 0;
-    }
-    &>li:last-of-type {
-      display: block;
     }
     .left,
     .right {
@@ -58,9 +111,60 @@ main.canary {
     }
     .right {
       margin-left: 30px;
+      position: relative;
+      top: 61px;
     }
   }
-  .icons {
+  li.staggered {
+    align-items: flex-start;
+    .left {
+      position: relative;
+      top: 79px;
+      margin-right: 5px;
+    }
+    .right {
+      margin-left: 5px;
+      top: 0px;
+    }
+    h4 {
+      margin-top: 60px;
+    }
+    .left h4,
+    .left p,
+    .right h4,
+    .right p {
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+  }
+  .lined {
+    position: relative;
+  }
+  .lined.second {
+    margin-top: 79px;
+  }
+  .lined::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: -150px;
+    width: 130px;
+    height: 2px;
+    border-bottom: 2px dashed #7C7B7B;
+  }
+  .bird {
+    position: relative;
+    left: 25%;
+  }
+  .accusations {
+    width: 45%;
+    box-shadow: 0 2px 7px #BABABA;
+  }
+}
+.icons {
+  padding-top: 79px;
+  ul {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,5 +173,5 @@ main.canary {
       width: calc(33% - 18px); 
       margin: 9px;
     }
-  }
+  } 
 }

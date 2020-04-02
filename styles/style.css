@@ -250,7 +250,7 @@ html {
 }
 
 /* Type Styles - type.scss */
-p, h2, h3 {
+p, h2, h3, h4 {
   color: #434343;
 }
 
@@ -271,6 +271,7 @@ h4 {
 
 p {
   font-family: "Open Sans", sans-serif;
+  line-height: 27px;
 }
 
 .italic {
@@ -287,6 +288,11 @@ p {
 
 p.accent {
   font-weight: bold;
+  font-family: "Noto Serif", serif;
+}
+
+p.semi-accent {
+  font-weight: 600;
 }
 
 h1 > .accent {
@@ -745,15 +751,82 @@ section.hero p {
 }
 
 /* Canary Styles - canary.scss */
-main.canary h2 {
+.canary h2 {
   font-size: 3.6rem;
   font-weight: 700;
   color: #434343;
   margin: 25px 0;
 }
 
-main.canary section h3 {
+.canary section h3 {
   font-size: 2.0rem;
+}
+
+.canary section h4 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.canary p {
+  font-size: 1.8rem;
+  margin: 0;
+  margin-bottom: 18px;
+  margin-top: 18px;
+}
+
+.canary section {
+  margin: 100px 0;
+}
+
+.primary-research p {
+  margin: 0px 0 18px;
+}
+
+.primary-research .stats {
+  width: 75%;
+  margin: 30px auto;
+  position: relative;
+}
+
+.primary-research .stats::after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 90%;
+  width: 2px;
+  top: 5%;
+  left: -23.5px;
+  background-color: #979797;
+}
+
+.primary-research .stats li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-size: 1.7rem;
+}
+
+.primary-research p.percentage {
+  font-size: 4.1rem;
+  font-family: "Noto Serif", serif;
+  padding-right: 5px;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+.primary-research p.quote {
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+}
+
+.secondary-research p {
+  margin: 0px 0 18px;
 }
 
 .parallel-space > p {
@@ -787,6 +860,10 @@ main.canary section h3 {
   margin-right: 60px;
 }
 
+.final-design p {
+  margin: 18px 0;
+}
+
 .final-design .logo {
   width: 480px;
   margin: 0 auto;
@@ -797,15 +874,11 @@ main.canary section h3 {
   margin: 92px 0;
 }
 
-.final-design .mockups > li {
+.final-design .mockups li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 92px 0;
-}
-
-.final-design .mockups > li:last-of-type {
-  display: block;
 }
 
 .final-design .mockups .left,
@@ -819,9 +892,74 @@ main.canary section h3 {
 
 .final-design .mockups .right {
   margin-left: 30px;
+  position: relative;
+  top: 61px;
 }
 
-.final-design .icons {
+.final-design li.staggered {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.final-design li.staggered .left {
+  position: relative;
+  top: 79px;
+  margin-right: 5px;
+}
+
+.final-design li.staggered .right {
+  margin-left: 5px;
+  top: 0px;
+}
+
+.final-design li.staggered h4 {
+  margin-top: 60px;
+}
+
+.final-design li.staggered .left h4,
+.final-design li.staggered .left p,
+.final-design li.staggered .right h4,
+.final-design li.staggered .right p {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.final-design .lined {
+  position: relative;
+}
+
+.final-design .lined.second {
+  margin-top: 79px;
+}
+
+.final-design .lined::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: -150px;
+  width: 130px;
+  height: 2px;
+  border-bottom: 2px dashed #7C7B7B;
+}
+
+.final-design .bird {
+  position: relative;
+  left: 25%;
+}
+
+.final-design .accusations {
+  width: 45%;
+  -webkit-box-shadow: 0 2px 7px #BABABA;
+          box-shadow: 0 2px 7px #BABABA;
+}
+
+.icons {
+  padding-top: 79px;
+}
+
+.icons ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -834,7 +972,7 @@ main.canary section h3 {
   width: 100%;
 }
 
-.final-design .icons li {
+.icons ul li {
   width: calc(33% - 18px);
   margin: 9px;
 }
